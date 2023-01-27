@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: sales_revenue_by_product
+    description: "dbt model"
+    columns:
+      - name: product
+        description: "Products"
+        tests:
+          - unique
+          - not_null
+
+  - name: best_sellers
+    description: "dbt model"
+    columns:
+      - name: product
+        description: "dbt model"
+        tests:
+          - unique
+          - not_null
